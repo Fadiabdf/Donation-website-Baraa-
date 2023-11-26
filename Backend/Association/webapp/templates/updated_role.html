@@ -1,0 +1,58 @@
+
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Member Role Updated</title>
+			<style>
+				body {
+					background-color: #E49207;
+					font-family: Georgia, sans-serif;
+				}
+				.container {
+					max-width: 600px;
+					margin: 0 auto;
+					padding: 20px;
+					background-color: #F8F8F5;
+					border: 5px solid #E49207;
+				}
+				.message h1 {
+					font-family: Georgia, sans-serif;
+					color: #496443;
+				}
+				
+				.message {
+					margin-bottom: 20px;
+				}
+				.message h2 {
+					font-family: Georgia, sans-serif;
+					color: #496443;
+					font-size: 24px;
+				}
+				.message p {
+					color: black;
+				}
+				.signature {
+					text-align: right;
+					color: #496443;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="container">
+				<div class="message">
+					<h1> From Baraa association </h1>
+				</div>
+				<div class="message">
+					<h2>Dear {{member.Nom}} {{member.Prenom}},</h2>
+					<p>your role have been changed from {{role}} to {{new_role}}.</p>
+	                <p>As a {{member.role}}, you will have additional responsibilities and privileges to respect.<br> Please contact the  coordinators for more information.</p>
+	                <p>Thank you for your continued involvement in making our activities a success.</p>
+				</div>
+				<div class="signature">
+					<p>Best regards,</p>
+					<p>The Baraa Association Team</p>
+				</div>
+			</div>
+		</body>
+		</html>

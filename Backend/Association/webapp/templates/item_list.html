@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item List</title>
+</head>
+<body>
+    <h1>Item List</h1>
+    <ul>
+        {% for item in items %}
+            <li> item : {{ item.item }} , quantity : {{ item.Qte }}</li>
+        {% endfor %}
+        
+    </ul>
+</body>
+</html>
+
+

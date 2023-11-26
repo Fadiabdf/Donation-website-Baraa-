@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Donation Confirmed</title>
+</head>
+<body>
+	<h2>Dear {{donateur.Nom}},</h2>
+	<p>We are pleased to inform you that your donation of {{donation.montant}} has been confirmed. Your generosity and support are greatly appreciated!</p>
+	<p>Your donation will be used to support our mission and help us continue our work in the community. Your contribution will make a difference.</p>
+	<p>Thank you again for your generous donation. We hope that you will continue to support our cause and make a positive impact on the lives of others.</p>
+	<p>Best regards,</p>
+	<p>The Baraa Association Team</p>
+</body>
+</html>
+
+message =(
+        'from Baraa association \n\n'
+        'Dear '+donateur.Nom+' '+donateur.Prenom+'\n'
+        'We are pleased to inform you that your donation  has been confirmed. Your generosity and support are greatly appreciated!\n'
+        'Your donation will be used to support our mission and help us continue our work in the community.\n'
+        'Your contribution will make a difference.\n'
+        'Thank you again for your generous donation. We hope that you will continue to support our cause and make a positive impact on the lives of other children.\n\n'
+        'Best regards,\n'    
+        'The Baraa Association Team'
+           )
+
+
+		   <!DOCTYPE html>
+		   <html>
+		   <head>
+			   <meta charset="utf-8">
+			   <title>Donation Confirmed</title>
+			   <style>
+				   body {
+					   background-color: #E49207;
+					   font-family: Georgia, sans-serif;
+				   }
+				   .container {
+					   max-width: 600px;
+					   margin: 0 auto;
+					   padding: 20px;
+					   background-color: #F8F8F5;
+					   border: 5px solid #E49207;
+				   }
+				   .message h1 {
+					   font-family: Georgia, sans-serif;
+					   color: #496443;
+				   }
+				   
+				   .message {
+					   margin-bottom: 20px;
+				   }
+				   .message h2 {
+					   font-family: Georgia, sans-serif;
+					   color: #496443;
+					   font-size: 24px;
+				   }
+				   .message p {
+					   color: black;
+				   }
+				   .signature {
+					   text-align: right;
+					   color: #496443;
+				   }
+			   </style>
+		   </head>
+		   <body>
+			   <div class="container">
+				   <div class="message">
+					   <h1> From Baraa association </h1>
+				   </div>
+				   <div class="message">
+					<h2>Dear {{donateur.Nom}} {{donateur.Prenom}}</h2>
+					<p>We are pleased to inform you that your donation of {{donation.amount}} has been confirmed.<br> Your generosity and support are greatly appreciated!</p>
+					<p>Your donation will be used to support our mission and help us continue our work in the community.<br> Your contribution will make a difference.</p>
+					<p>Thank you again for your generous donation.<br> We hope that you will continue to support our cause and make a positive impact on the lives of others.</p>
+				   </div>
+				   <div class="signature">
+					   <p>Best regards,</p>
+					   <p>The Baraa Association Team</p>
+				   </div>
+			   </div>
+		   </body>
+		   </html>

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-html5video": "^2.5.1",
+    "styled-components": "^5.3.0"
+  }
+}
