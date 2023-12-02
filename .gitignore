@@ -1,3 +1,10 @@
+
+.gitignore
+package-lock.json
+package.json
+Frontend\mon-app\README.md
+Frontend\mon-app\package-lock.json
+Frontend\mon-app\package.json
 # Python/Django
 __pycache__/
 *.pyc
@@ -6,16 +13,32 @@ __pycache__/
 *.db.sqlite3
 
 # Ignore Django settings file
-/settings.py
+Backend\Association\db.sqlite3
+Backend\Association\static
+Backend\Association\Association\settings.py
+Backend\Association\Association\asgi.py
+Backend\Association\Association\wsgi.py
+Backend\Association\Association\__pycache__
+Backend\Lib
+Backend\Scripts
+Backend\pyvenv.cfg
 
+
+Backend\Association\webapp\__pycache__
+Backend\Association\webapp\migrations
+Backend\Association\webapp
 # Node.js
-node_modules/
+node_modules
+Frontend\mon-app\node_modules
 
 # Compiled source
 /dist/
 /build/
 *.jsx
 *.js
+
+Frontend\mon-app\public
+Frontend\mon-app\src\assets
 
 # Dependency directories
 .env/
@@ -24,6 +47,28 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+
+Frontend\mon-app\.gitignore
 
 # Editor directories and files
 .vscode/
