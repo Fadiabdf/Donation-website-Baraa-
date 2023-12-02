@@ -27,20 +27,11 @@ class Actor(models.Model):
     Date_Naissance = models.DateField(verbose_name='Date de naissance',null=True,blank=True) 
     Adresse= models.CharField(max_length=150, verbose_name='Adresse',null=True,blank=True)  
     Num_tel= PhoneNumberField(null=True, blank=True, unique=False,verbose_name='Numéro du téléphone') 
-    '''
-    Some examples of valid phone number formats that can be validated using 
-    PhoneNumberField with PHONENUMBER_DEFAULT_REGION = 'DZ' include:
-     +213 6 01 23 45 67
-     00213601234567
-     06 01 23 45 67
-    '''
+    
     GENDER_CHOICES = (('M', 'Masculin'), ('F', 'Féminin'))
     Sexe = models.CharField(max_length=20, choices=GENDER_CHOICES, default='Masculin', verbose_name='Sexe',blank=True)
     Pays = CountryField(verbose_name='Pays',blank=True,null=True)  
-    '''
-     class Meta:
-        abstract = True
-    '''
+    
     def __str__(self):
        return self.Nom+' '+self.Prenom  
     class Meta:
